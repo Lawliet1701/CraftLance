@@ -1,0 +1,448 @@
+@import "_fonts"
+
+$green: #5db442
+    
+html 
+    margin: 0px 
+    padding: 0px
+    
+body
+    background-color: #efefef
+    font-family: "RobotoLight"
+    cursor: default
+    
+.top-line
+    background-color: #282828
+    height: 40px
+    color: #fff
+    line-height: 40px
+    
+.top-line a
+    text-decoration: none
+    color: #fff
+    
+.soc-buttons
+    float: left
+    
+.top-contacts
+    float: right
+
+.soc-buttons a
+    padding-right: 8px
+    
+.top-contacts i
+    padding-left: 15px
+    padding-right: 8px
+
+nav
+    background-color: #fff
+    height: 80px
+  
+.logo
+    float: left
+    font-family: "BasicSansSerif7", Tahoma
+    font-size: 30px
+    padding-top: 18px
+    
+.logo a
+    color: #636666
+    outline: none
+    
+.top-menu
+    position: relative
+    
+    ul
+        float: right
+        z-index: 12
+    li
+        display: inline-block
+    .signin-button
+        color: $green
+        border: 1px solid $green
+        border-radius: 20px
+    .signin-button:hover
+        background-color: $green
+        color: #fff
+    
+.top-menu a
+    color: #000
+    display: block
+    padding: 7px 30px
+    margin-top: 8px
+    font-family: "RobotoMedium"
+    font-size: 14px
+    transition: all .2s
+    outline: none
+    
+.top-menu a:hover
+    color: $green
+    
+.mnu-button
+    background-color: transparent
+    border: medium none
+    font-size: 30px
+    margin-top: 17px
+    color: #636666
+    float: right
+    outline: none
+
+.middle-header
+    background-color: #4ca368
+    text-align: center
+    padding: 60px 0 55px 0
+    color: #000
+    
+.middle-header 
+    h1
+        font-size: 48px
+        margin-top: 0px
+    h3
+        font-size: 16px
+    img
+        display: block 
+        margin: 0 auto
+        padding-top: 15px
+    
+.form-header 
+    text-align: center
+    padding-top: 35px
+    font-size: 12px
+    font-family: "RobotoRegular"
+
+.form-header a
+    display: inline-block
+    padding: 10px 20px
+    background-color: #5db442
+    color: #fff
+    border-radius: 0px 20px 20px 0px
+    margin-left: -4px;
+    
+.form-header input
+    display: inline-block
+    border: 1px solid #cccccc
+    outline: none
+    padding: 9px 20px
+    border-radius: 20px 0px 0px 20px
+
+.form-header .form-desc
+    display: block
+    padding: 20px 0 27px
+    color: #777777
+
+.community
+    background-image: url("../img/bg.jpg")
+    background-size: cover
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    color: #fff
+    text-align: center
+    
+.bground
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%
+    
+.middle
+    display: flex
+    justify-content: center
+    flex-direction: row
+    align-items: center
+    background: rgba(255, 255, 255, 0.15);
+    width: 50%
+    margin: 0 auto
+    font-family: "RobotoRegular", Tahoma, Arial
+    height: 170px
+
+.ncomment
+    padding-left: 15px
+
+.middle .nsign a
+    font-size: 48px
+    color: $green
+    margin-top: 10px
+    padding-left: 5px
+    outline: none
+    
+.middle .ntitle
+    margin-bottom: 5px
+    color: $green
+    font-size: 24px
+
+.middle .ndesc
+    margin-bottom: 5px
+    font-family: "RobotoRegular"
+
+.community 
+    p
+        margin: 0
+        margin-bottom: 40px      
+  
+    .icons
+        text-align: center
+        margin-bottom: 80px
+        margin-top: 50px
+
+    .icons p
+        padding-top: 10px
+    
+    h2
+        font-size: 40px
+        font-weight: 300
+        margin-top: 80px
+    
+%bg-round
+    display: inline-block
+    padding: 15px
+    border-radius: 25px
+
+.icons i
+    @extend %bg-round
+    background-color: $green
+    color: #fff
+    cursor: pointer
+    transition: all .25s
+    
+.icons i:hover
+    @extend %bg-round
+    background-color: #fff
+    color: $green
+    
+.price-table
+    text-align: center
+    margin-bottom: 70px
+    
+    .offer1, .offer2, .offer3
+        border: 1px solid #eee
+
+.price-menu
+    .offer-item 
+        display: none
+        cursor: pointer
+    
+.offer1:hover, .offer2:hover, .offer3:hover
+    hr
+        background-color: $green
+        transition: all .25s
+    a  
+        background-color: $green
+        color: #fff
+        transition: all .25s
+    
+.price-table h3
+    margin-top: 0px
+    padding-top: 100px
+    font-size: 40px
+    color: #000
+
+.trigger
+    margin-bottom: 50px
+    
+%trigger
+    color: $green
+    cursor: pointer
+    display: inline-block
+    background-color: #fff
+    padding: 10px 29px
+    font-size: 18px
+    border: 1px solid $green
+    
+.trigger .center-trigger
+    @extend %trigger
+    color: #fff
+    padding: 6px 6px
+    border-radius: 50%
+    background-color: #4ca368
+    position: relative
+    z-index: 1
+    cursor: default
+    
+.trigger .left-trigger
+    @extend %trigger
+    border-radius: 20px 0px 0px 20px
+    margin-right: -22px
+    
+.trigger .right-trigger
+    @extend %trigger
+    border-radius: 0px 20px 20px 0px
+    margin-left: -23px
+    color: #fff
+    background-color: $green
+    
+.trigger .left-trigger:hover
+    color: #fff
+    background-color: $green
+    
+.trigger .right-trigger:hover
+    color: #fff
+    background-color: $green
+    
+.price-table .title
+    font-size: 19px
+    font-family: "RobotoMedium"
+    
+.price-table hr
+    border: none
+    height: 2px
+    background-color: #cccccc
+    margin-left: 20%
+    margin-right: 20%
+    
+.price-table .price
+    color: green
+    border: 1px solid $green
+    width: 90px
+    height: 90px
+    border-radius: 50%
+    padding-top: 10px
+    margin: 30px auto 40px
+    
+.price-table p
+    color: #333333
+    margin: 0
+
+.price-table .count
+    padding-top: 5px
+    font-size: 24px
+    font-weight: bold
+    
+.price-table .term
+    font-style: italic
+    font-size: 12px
+
+.price-table ul
+    list-style-type: none
+    padding-left: 0
+    
+.price-table li
+    padding-bottom: 10px
+    
+.price-table .active-item
+    color: $green
+    
+.price-table a
+    display: block
+    padding: 10px 35px
+    background-color: #efefef
+    color: #333333
+    border-radius: 20px
+    margin-bottom: 20px
+
+section
+    padding-bottom: 50px
+    background-color: #fff
+    
+.feature
+    text-align: center
+    
+.feature 
+    h3
+        margin-top: 0px
+        padding-top: 70px
+        font-size: 40px
+        color: #000
+    h4
+        font-size: 16px
+    p
+        font-size: 12px
+        font-family: "RobotoRegular"
+    
+.feature-item
+    box-sizing: border-box
+    padding-top: 40px
+    padding-bottom: 60px
+    box-shadow: 0px 2px 3px #cbcbcb
+    margin-bottom: 30px
+    cursor: default
+    width: 23.5%
+    margin-right: 2%
+    
+div.feature-item:last-child
+    margin-right: 0
+    
+.feature-item:hover
+    background-color: $green
+    color: #fff
+    transition: all .25s
+    i 
+        color: #fff
+        transition: all .25s
+    hr
+        background-color: #fff
+        transition: all .25s
+    
+.feature i
+    font-size: 48px
+    color: $green
+
+.feature hr
+    border: none
+    height: 1px
+    background-color: #ececec
+    margin-left: 35%
+    margin-right: 35%
+    
+footer
+    background-color: #efefef
+    margin-top: 40px
+    
+footer h4
+    color: #010101
+    font-size: 16px
+    padding-left: 8px
+    padding-right: 8px
+    
+footer input
+    display: inline-block
+    border: 1px solid #dddddd
+    outline: none
+    padding: 9px 12px
+    width: 83%
+    
+footer .search-button
+    display: inline-block
+    background-color: $green
+    padding: 10px 18px
+    margin-left: -4px
+    color: #fff
+    
+footer p
+    font-size: 12px
+    font-family: "RobotoRegular"
+    
+footer .footer-column
+    width: 22%
+    
+footer .footer-column:first-child
+    width: 34%
+    
+footer ul
+    list-style-type: none
+    padding-left: 0
+  
+footer li>a
+    display: block
+    color: #333
+    font-family: "RobotoLight"
+    padding: 8px
+    font-weight: bold
+
+footer li:hover
+    background-color: $green
+   
+.bottom-line
+    height: 80px
+    line-height: 80px
+
+footer .logo
+    display: inline-block
+    color: #636666
+    padding-top: 0px
+    font-size: 20px
+    padding-left: 10px
+    
+footer .rights
+    float: right
+    margin-top: 0
+    margin-bottom: 0
+    font-size: 12px
+
+@import "_media"    
